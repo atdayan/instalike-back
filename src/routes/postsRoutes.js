@@ -4,7 +4,7 @@ import multer from "multer";
 import { listarPosts, postarNovoPost, uploadImagem, atualizarNovoPost } from "../controllers/postsController.js";
 
 const corsOptions = {
-  origin: "http://localhost:8000",
+  origin: process.env.BASE_URL,
   optionsSuccessStatus: 200
 }
 
